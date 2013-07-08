@@ -12,7 +12,7 @@ class AeegTimeTest < Test::Unit::TestCase
     while (t<t2)
       assert_equal(res[i], t.aeeg_band(true), "Error on #{i}-th element (#{t.to_s})")
       t += 3600 # add an hour
-      t = t.to_aeeg
+      # t = t.to_aeeg_time
       i += 1
     end
   end

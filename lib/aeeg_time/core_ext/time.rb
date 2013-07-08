@@ -5,13 +5,8 @@ Time.class_eval do
     ::Date.new(year, month, day)
   end
 
-
   def monthday
     strftime("%m%d")
-  end
-
-  def to_aeeg
-    AeegTime.parse(to_s)
   end
 
   def method_missing(sym, *args, &block)

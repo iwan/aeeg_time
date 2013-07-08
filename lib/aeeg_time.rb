@@ -4,13 +4,8 @@ require_relative 'aeeg_time/italian_holidays'
 # reminder: irb -Ilib -raeeg_time
 
 
-
 class AeegTime < EnergyTime
   include ItalianHolidays
-
-  # def +(seconds)
-  #   (super.+(seconds)).to_aeeg
-  # end
 
   # Fascie orarie definite nell'Allegato A, tabella 6, deliberazione 301/12
   def aeeg_band(return_a_number=false)
